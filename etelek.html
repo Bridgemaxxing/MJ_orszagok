@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japán Ételek 🍱</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="kaja-oldal" class="bg-dark text-white">
+
+<nav class="navbar navbar-expand-lg etelek-nav fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">🌸 Japán</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon bg-light rounded"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="index.html">Bevezető</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="kultura.html">Kultúra</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="animek.html">Animék</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="mangak.html">Mangák</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="etelek.html">Ételek</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<div class="container mt-5 pt-5">
+    <h1 class="text-center mb-4">Japán Ételek</h1>
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card bg-secondary text-white">
+                <img class="card-img-top img-fluid" style="height:250px; object-fit:cover; cursor:pointer;" data-bs-toggle="modal" data-bs-target="#imageModal" src="bg/lakoma.jpg" class="card-img-top" alt="Japán étel">
+                <div class="card-body">
+                    <h5 class="card-title">Japán lakoma</h5>
+                    <p class="card-text">A japán ételek híresek friss alapanyagaikról és esztétikus tálalásukról. Gyakoriak a halételek, rizs és fermentált hozzávalók.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card bg-secondary text-white">
+                <img class="card-img-top img-fluid" style="height:250px; object-fit:cover; cursor:pointer;" data-bs-toggle="modal" data-bs-target="#imageModal" src="bg/hagyomanyos_etterem.jpg" class="card-img-top" alt="Japán étkezőhely">
+                <div class="card-body">
+                    <h5 class="card-title">Éttermi hangulat</h5>
+                    <p class="card-text">A tradicionális japán étkezések gyakran több fogásból állnak, kis adagokban tálalva, és hangsúlyt fektetnek az egyensúlyra.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Kép megnyitása modalban -->
+<!-- Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark border-0">
+      <div class="modal-body p-0">
+        <img id="modalImage" src="" class="img-fluid w-100" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container mt-5">
+  
+
+  <div class="text-center mt-4">
+    <a href="https://www.youtube.com/results?search_query=japanese+food+recipe" target="_blank" class="btn btn-primary">
+      Nézz japán recepteket YouTube-on!
+    </a>
+  </div>
+</div>
+
+
+<div class="container mt-5">
+  <h2 class="text-center">Hogyan készülnek a japán ételek?</h2>
+  <p class="text-center">
+    A japán konyha lényege a frissesség és az egyszerű, de tökéletesen kidolgozott technikák. Nézd meg, hogyan készülnek a legismertebb fogások!
+  </p>
+
+  <div class="row text-center g-4">
+    <div class="col-md-4">
+      <div class="card bg-dark text-white">
+        <img src="bg/craft.jpg" class="card-img-top img-fluid" style="height: 200px; object-fit: cover;" alt="Sushi">
+        <div class="card-body">
+          <h5 class="card-title">🍣 Sushi készítés</h5>
+          <a href="https://www.youtube.com/results?search_query=how+to+make+sushi" target="_blank" class="btn btn-outline-light">Megnézem</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-dark text-white">
+        <img src="bg/ramen_home.jpg" class="card-img-top img-fluid" style="height: 200px; object-fit: cover;" alt="Ramen">
+        <div class="card-body">
+          <h5 class="card-title">🍜 Ramen otthon</h5>
+          <a href="https://www.youtube.com/results?search_query=how+to+make+ramen" target="_blank" class="btn btn-outline-light">Megnézem</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-dark text-white">
+        <img src="bg/tempura.jpg" class="card-img-top img-fluid" style="height: 200px; object-fit: cover;" alt="Tempura">
+        <div class="card-body">
+          <h5 class="card-title">🍤 Tempura titkai</h5>
+          <a href="https://www.youtube.com/results?search_query=how+to+make+tempura" target="_blank" class="btn btn-outline-light">Megnézem</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="text-center mt-5">Étel összehasonlító táblázat</h3>
+  <div class="table-responsive">
+    <table class="table table-dark table-striped text-center">
+      <thead>
+        <tr>
+          <th>Étel</th>
+          <th>Fő összetevő</th>
+          <th>Íz jellege</th>
+          <th>Mikor eszik?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Sushi</td><td>Hal + rizs</td><td>Umami</td><td>Mindenkor</td></tr>
+        <tr><td>Ramen</td><td>Leves + tészta</td><td>Sós, gazdag</td><td>Hideg időben</td></tr>
+        <tr><td>Tempura</td><td>Rántott zöldségek/hal</td><td>Ropogós, olajos</td><td>Ünnepeken</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+</body>

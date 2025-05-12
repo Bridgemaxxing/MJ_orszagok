@@ -1,0 +1,386 @@
+
+/*fooldal*/
+body.fooldal {
+    margin: 0;
+    padding: 0;
+    background-image: url('bg/hatter.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/*kultura-oldal*/
+body.kultura-oldal {
+    margin: 0;
+    padding: 0;
+    background-image: url('bg/hatterKultura.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+.navbar {
+    backdrop-filter: blur(6px);
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+
+/* Főoldal nav-link alap betűszín */
+body.fooldal .nav-link {
+  color: white !important;
+  transition: color 0.3s ease;
+}
+
+/* Hover hatás a főoldalon */
+body.fooldal .nav-link:hover {
+  color: #ffb3c6 !important; /* halvány rózsaszín hover szín */
+}
+
+
+.sakura-petal {
+  position: fixed;
+  top: -50px;
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+  z-index: 1000;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Kultúra oldal NAVBAR háttér – halvány piros */
+body.kultura-oldal .navbar {
+  background-color: rgba(255, 105, 97, 0.3) !important; /* halvány piros */
+  backdrop-filter: blur(6px);
+}
+
+/* Kultúra oldal nav-link – betűszín */
+body.kultura-oldal .nav-link {
+  color: #ffccd5 !important; /* világos rózsás piros */
+  font-weight: bold;
+}
+
+/* Hover hatás – erősebb piros */
+body.kultura-oldal .nav-link:hover {
+  color: #ff6f61 !important; /* lazac-piros hover */
+}
+
+#szoveg2{
+  color: red;
+  font-weight: bold;
+}   
+
+
+
+/* ANIMEK*/
+body.animek-oldal .navbar {
+  background-color: rgba(96, 115, 158, 0.3) !important; /* halvány piros */
+  backdrop-filter: blur(6px);
+}
+
+
+body.animek-oldal .nav-link {
+  color: #f43e3e !important; 
+  font-weight: bold;
+}
+
+
+body.animek-oldal .nav-link:hover {
+  color: #000000 !important; 
+}
+
+body.animek-oldal {
+  margin: 0;
+  padding: 0;
+  background-image: url('bg/animebg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+#anime-intro {
+  padding: 1.5rem;
+  background-color: #fdf6f0;
+  border-radius: 8px;
+  line-height: 1.6;
+}
+
+#anime-intro h2 {
+  color: #c0392b;
+  font-size: 1.8rem;
+}
+
+#anime-intro p {
+  margin-bottom: 1rem;
+}
+#anime-section {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+#anime-section h2 {
+  color: #ff4f5a;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#anime-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+#anime-list div {
+  background-color: #2c2c2c;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+#anime-list img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+#anime-list h3 {
+  margin-top: 100px;
+  font-size: 1.1rem;
+  color: #ffcc70;
+}
+
+#anime-list p {
+  margin: 0.5rem 0;
+  color: #ccc;
+}
+
+#anime-list a {
+  text-decoration: none;
+  color: #7db4ff;
+  font-weight: bold;
+}
+
+
+/*MANGAK */
+
+body.mangak-oldal .navbar {
+  background-color: rgba(96, 115, 158, 0.3) !important; /* halvány piros */
+  backdrop-filter: blur(6px);
+}
+
+
+body.mangak-oldal .nav-link {
+  color: #f43e3e !important; 
+  font-weight: bold;
+}
+
+
+body.mangak-oldal .nav-link:hover {
+  color: #000000 !important; 
+}
+
+body.mangak-oldal {
+  margin: 0;
+  padding: 0;
+  background-image: url('bg/mangak.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/*MANGAK*/
+#manga-section {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+#manga-intro{
+    padding: 1.5rem;
+  background-color: #fdf6f0;
+  border-radius: 8px;
+  line-height: 1.6;
+}
+
+#manga-section h2 {
+  color: #ff7b00;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#manga-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+#manga-list div {
+  background-color: #2c2c2c;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+#manga-list img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+#manga-list h3 {
+  margin-top: 100px;
+  font-size: 1.1rem;
+  color: #ffe599;
+}
+
+#manga-list p {
+  margin: 0.5rem 0;
+  color: #ccc;
+}
+
+#manga-list a {
+  text-decoration: none;
+  color: #7db4ff;
+  font-weight: bold;
+}
+
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+
+body {
+    padding-top: 80px;
+}
+
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar.etelek-nav {
+    background-color: rgba(255, 99, 71, 0.3) !important; /* Tomato-like */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar.etelek-nav .nav-link,
+.navbar.etelek-nav .navbar-brand {
+    color: #ffe0d0 !important;
+}
+
+.navbar.kultura-nav {
+    background-color: rgba(139, 0, 0, 0.4) !important; /* Dark red */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar.kultura-nav .nav-link,
+.navbar.kultura-nav .navbar-brand {
+    color: #ffeaea !important;
+}
+
+
+body.kaja-oldal {
+    background: url('bg/hatter_kaja.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fefae0;
+}
+
+.card.bg-secondary {
+    background-color: rgba(0, 0, 0, 0.65) !important;
+}
+
+
+.navbar.etelek-nav {
+    background-color: rgba(255, 115, 0, 0.35) !important;
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar.etelek-nav .nav-link,
+.navbar.etelek-nav .navbar-brand {
+    color: #fff3e0 !important;
+}
+
+
+/* Kultúra oldal háttér */
+body.kultura-oldal {
+    background: url('bg/hatterKultura123.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f7f2f2;
+}
+
+
+.navbar.kultura-nav {
+    background-color: rgba(80, 0, 45, 0.4) !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar.kultura-nav .nav-link,
+.navbar.kultura-nav .navbar-brand {
+    color: #ffeef5 !important;
+}
+
+
+body.kultura-oldal::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 0, 25, 0.4);
+    z-index: -1;
+}
+
+
+.navbar.kultura-nav {
+    background-color: rgba(40, 0, 30, 0.6) !important;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar.kultura-nav .nav-link,
+.navbar.kultura-nav .navbar-brand {
+    color: #e0d7e6 !important;
+}
